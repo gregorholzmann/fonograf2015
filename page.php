@@ -37,12 +37,6 @@ get_header(); ?>
 
 	</div><!-- .columns end -->
 
-	<div class="medium-4 small-12 columns"><!-- .columns start -->
-
-		<?php get_sidebar(); ?>
-
-	</div><!-- .columns end -->
-
 </div><!-- .row end -->
 
 <?php get_footer(); ?>

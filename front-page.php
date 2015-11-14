@@ -11,8 +11,6 @@ get_header(); ?>
 
 <div class="row"><!-- .row start -->
 
-	<div class="medium-8 small-12 columns"><!-- .columns start -->
-
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
 
@@ -41,14 +39,6 @@ get_header(); ?>
 
 			</main><!-- #main -->
 		</div><!-- #primary -->
-
-	</div><!-- .columns end -->
-
-	<div class="medium-4 small-12 columns"><!-- .columns start -->
-
-		<?php get_sidebar(); ?>
-
-	</div><!-- .columns end -->
 
 </div><!-- .row end -->
 

@@ -41,43 +41,25 @@
 
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header medium-3 small-12 columns" role="banner">
 
 		<div class="row"><!-- .row start -->
-
-			<div class="small-12 columns"><!-- .columns start -->
 
 				<div class="site-branding">
 
 					<div class="row"><!-- .row start -->
 
-						<div class="small-12 columns"><!-- .columns start -->
-
 							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-
-						</div><!-- .columns end -->
-
-						<div class="small-12 columns"><!-- .columns start -->
-
-							<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-
-						</div><!-- .columns end -->
 
 					</div><!-- .row end -->
 
 				</div><!-- .site-branding -->
 
-			</div><!-- .columns end -->
-
 		</div><!-- .row end -->
-
-	</header><!-- #masthead -->
 
 	<div class="main-navigation">
 
 		<div class="row"><!-- .row start -->
-
-			<div class="small-12 columns"><!-- .columns start -->
 
 				<nav id="site-navigation" class="top-bar hide-for-small" data-topbar role="navigation">
 					<section class="top-bar-section">
@@ -85,10 +67,11 @@
 					</section>
 				</nav><!-- #site-navigation -->
 
-			</div><!-- .columns end -->
-
 		</div><!-- .row end -->
 
 	</div><!-- .main-navigation -->
 
-	<div id="content" class="site-content">
+</header><!-- #masthead -->
+
+
+	<div id="content" class="site-content medium-9 small-12 columns">
