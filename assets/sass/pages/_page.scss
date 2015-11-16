@@ -1,5 +1,15 @@
 #content {
 	margin: 2rem 0;
+
+	a {
+		color: $black;
+		border-bottom: 1px solid $red;
+		transition: .5s color ease;
+		&:hover {
+			color: red;
+		}
+	}
+
 }
 
 .entry-meta {

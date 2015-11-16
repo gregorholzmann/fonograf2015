@@ -1,26 +1,34 @@
 #masthead {
-	background: #ccc;
 	position: fixed;
 	height: 100%;
-}
+	padding: 1rem;
 
-.site-branding {
-	margin-bottom: 1.25rem;
-}
+	#site-navigation {
+		.top-bar-section {
+			.menu {
+				.menu-item {
+					clear: both;
+					display: inline-block;
 
-.site-title {
-	font-size: 3rem;
-	margin: 0;
-}
+					a {
+						padding: 0 .5rem;
+						text-transform: uppercase;
+						font-weight: 300;
+					}
+					&.active {
+						position: relative;
+					}
 
-.site-description {
-	margin: 0;
-}
-
-.main-navigation {
-	background: #333;
-}
-
-.main-navigation ul {
-	margin: 0;
+					&.active:before {
+							border-bottom: 3px solid $red;
+							position: absolute;
+							z-index: -1;
+							content: "";
+							width: 100%;
+							height: 50%;
+					}
+				}
+			}
+		}
+	}
 }
