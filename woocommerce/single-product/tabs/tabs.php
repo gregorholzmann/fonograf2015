@@ -30,7 +30,7 @@ if ( ! empty( $tabs ) ) : ?>
 			<?php endforeach; ?>
 		</ul>
 		<?php foreach ( $tabs as $key => $tab ) : ?>
-			<div class="panel entry-content wc-tab" id="tab-<?php echo esc_attr( $key ); ?>">
+			<div class="entry-content wc-tab" id="tab-<?php echo esc_attr( $key ); ?>">
 				<?php call_user_func( $tab['callback'], $key, $tab ); ?>
 			</div>
 		<?php endforeach; ?>

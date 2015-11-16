@@ -191,3 +191,20 @@ function heisenberg_nav_menu( $menu ){
 	$menu = str_replace('current-menu-item', 'current-menu-item active', $menu);
 	return $menu;
 }
+
+add_filter( 'woocommerce_product_tabs', 'fono_woo_remove_reviews_tab', 98 );
+	function fono_woo_remove_reviews_tab($tabs) {
+		unset($tabs['reviews']);
+	return $tabs;
+}
+
+add_action( 'init', 'fono_remove_wc_breadcrumbs' );
+function fono_remove_wc_breadcrumbs() {
+		remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+}
+
+add_action( 'woocommerce_single_product_summary', 'fono_move_add_to_cart' );
+function fono_move_add_to_cart() {
+		remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30, 0 );
+		add_action('woocommerce_after_single_product_summary', 'woocommerce_template_single_add_to_cart', 12, 0);
+}

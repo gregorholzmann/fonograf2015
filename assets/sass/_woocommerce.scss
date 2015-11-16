@@ -1,0 +1,33 @@
+.woocommerce div.product form.cart .button, .woocommerce a.button.alt {
+  background: $none;
+  color: $red;
+  text-transform: uppercase;
+  border: 1px solid $red;
+  border-radius: 5px;
+  transition: .5s ease all;
+
+  &:hover {
+    background-color: $red;
+    color: $white;
+  }
+}
+
+.woocommerce .woocommerce-message {
+  border-top-color: $red;
+  &::before {
+    color: $red;
+  }
+}
+
+.woocommerce div.product p.price {
+  color: $red;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+  display: none;
+}
+
+.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
+  float: none;
+  width: 100%;
+}

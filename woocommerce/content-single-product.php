@@ -31,17 +31,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php
-		/**
-		 * woocommerce_before_single_product_summary hook
-		 *
-		 * @hooked woocommerce_show_product_sale_flash - 10
-		 * @hooked woocommerce_show_product_images - 20
-		 */
-		do_action( 'woocommerce_before_single_product_summary' );
-	?>
+		<div class="record-images-and-details medium-6 small-12 columns">
 
-	<div class="summary entry-summary">
+		<?php
+			/**
+			 * woocommerce_before_single_product_summary hook
+			 *
+			 * @hooked woocommerce_show_product_sale_flash - 10
+			 * @hooked woocommerce_show_product_images - 20
+			 */
+			do_action( 'woocommerce_before_single_product_summary' );
+		?>
 
 		<?php
 			/**
@@ -51,14 +51,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 * @hooked woocommerce_template_single_rating - 10
 			 * @hooked woocommerce_template_single_price - 10
 			 * @hooked woocommerce_template_single_excerpt - 20
-			 * @hooked woocommerce_template_single_add_to_cart - 30
 			 * @hooked woocommerce_template_single_meta - 40
 			 * @hooked woocommerce_template_single_sharing - 50
 			 */
 			do_action( 'woocommerce_single_product_summary' );
 		?>
+		<ul class="record-details">
+			<li>Release Date: <?php the_field('release_date'); ?></li>
+			<li>Run Time: <?php the_field('run_time'); ?></li>
+			<li>Print Run: <?php the_field('print_run'); ?></li>
+		</ul>
 
-	</div><!-- .summary -->
 
 	<?php
 		/**
@@ -70,6 +73,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 */
 		do_action( 'woocommerce_after_single_product_summary' );
 	?>
+
+	<?php the_field('track_list'); ?>
+
+	</div>
+
+	<div class="record-summary-review medium-6 small-12 columns">
+		<?php the_field('summary_review'); ?>
+	</div>
+
 
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
 

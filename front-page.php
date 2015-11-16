@@ -14,28 +14,30 @@ get_header(); ?>
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
 
-			<?php if ( have_posts() ) : ?>
+				<?php
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+				// args
+				$args = array(
+					'post_type' => 'product',
+					'posts_per_page' => 1
+				);
 
-					<?php
-						/* Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'page-templates/partials/content', get_post_format() );
-					?>
+				// query
+				$the_query = new WP_Query( $args );
 
-				<?php endwhile; ?>
+				?>
 
-				<?php the_posts_navigation(); ?>
+				<?php if( $the_query->have_posts() ): ?>
+					<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
+						<div class="medium-6 small-12 columns">
+							<?php the_title(); ?>
+							<?php the_post_thumbnail(); ?>
+							<?php the_field('short_description'); ?>
+						</div>
+					<?php endwhile; ?>
+				<?php endif; ?>
 
-			<?php else : ?>
-
-				<?php get_template_part( 'page-templates/partials/content', 'none' ); ?>
-
-			<?php endif; ?>
+				<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 
 			</main><!-- #main -->
 		</div><!-- #primary -->
