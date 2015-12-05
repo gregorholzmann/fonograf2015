@@ -6,8 +6,22 @@
 	}
 
 	.main-navigation {
+		height: 100%;
 		@include breakpoint(sm) {
 			margin-top: 2rem;
+
+			.social {
+				display: none;
+				position: absolute;
+				bottom: 0;
+				@include breakpoint(sm) {
+					display: block;
+				}
+				svg {
+					width: 35px;
+				}
+			}
+
 		}
 
 		#site-navigation {
@@ -73,15 +87,6 @@
 		}
 	}
 
-	.social {
-		display: none;
-		@include breakpoint(sm) {
-			display: block;
-		}
-		svg {
-			width: 35px;
-		}
-	}
 }
 
 .off-canvas-wrap {

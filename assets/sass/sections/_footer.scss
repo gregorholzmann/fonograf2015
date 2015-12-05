@@ -5,6 +5,9 @@
 
 .social-footer {
 	text-align: center;
+	@include breakpoint(sm) {
+		display: none;
+	}
 	svg {
 		width: 35px;
 	}
