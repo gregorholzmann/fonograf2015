@@ -63,7 +63,14 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 			 * @hooked woocommerce_template_loop_product_title - 10
 			 */
 			do_action( 'woocommerce_shop_loop_item_title' );
+		?>
+	</a>
 
+			<p class="latest-description">
+				<?php the_field('short_description'); ?>
+			</p>
+
+		<?php
 			/**
 			 * woocommerce_after_shop_loop_item_title hook
 			 *
@@ -73,7 +80,6 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 			do_action( 'woocommerce_after_shop_loop_item_title' );
 		?>
 
-	</a>
 
 	<?php
 

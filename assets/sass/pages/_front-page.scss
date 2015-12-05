@@ -1,0 +1,20 @@
+.home {
+  .latest-album {
+    .latest-title {
+      text-transform: uppercase;
+    }
+
+    .latest-image {
+      border-bottom: 0;
+      img {
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+    .latest-description {
+      font-size: 11px;
+      font-style: italic;
+    }
+  }
+}

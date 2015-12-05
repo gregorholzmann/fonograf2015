@@ -1,17 +1,17 @@
 #content {
 	margin: 2rem 0;
+}
 
-	.site-main {
-		a {
-			color: $black;
-			border-bottom: 1px solid $red;
-			transition: .5s color ease;
-			&:hover {
-				color: red;
-			}
+.site-main {
+	a {
+		color: $black;
+		border-bottom: 1px solid $red;
+		transition: .5s color ease;
+		&:hover {
+			color: red;
 		}
-
 	}
+
 }
 
 .entry-meta {

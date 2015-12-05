@@ -208,3 +208,11 @@ function fono_move_add_to_cart() {
 		remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30, 0 );
 		add_action('woocommerce_after_single_product_summary', 'woocommerce_template_single_add_to_cart', 12, 0);
 }
+
+// Change number or products per row to 2
+add_filter('loop_shop_columns', 'loop_columns');
+if (!function_exists('loop_columns')) {
+	function loop_columns() {
+		return 2;
+	}
+}

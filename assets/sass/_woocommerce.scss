@@ -31,3 +31,111 @@
   float: none;
   width: 100%;
 }
+
+.woocommerce .cart-collaterals .wc-proceed-to-checkout a.checkout-button {
+  color: $red;
+  &:hover {
+    color: $white;
+  }
+}
+
+.woocommerce input.button.alt, .woocommerce a.button, .woocommerce input.button {
+  color: $red;
+  background-color: $none;
+  border: 1px solid $red;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $red;
+    color: $white;
+  }
+}
+
+.woocommerce ul.products li.product .price {
+  color: $red;
+}
+
+.single-product .record-details {
+
+  margin-left: 0;
+
+   li {
+    list-style: none;
+  }
+}
+
+.woocommerce a.added_to_cart {
+  color: $red;
+  text-decoration: underline;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.woocommerce #respond input#submit.added:after, .woocommerce a.button.added:after, .woocommerce button.button.added:after, .woocommerce input.button.added:after {
+  display: none;
+}
+
+.woocommerce ul.products li.product .button {
+  width: 100%;
+  padding: .5rem 0;
+}
+
+.single-product {
+  .product_title {
+    text-transform: uppercase;
+  }
+  .entry-content {
+    p {
+      font-weight: 200;
+    }
+  }
+  .track-list {
+    p {
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+  .record-summary-review {
+    p {
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+}
+
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+  float: none;
+  width: 100%;
+
+  table {
+    width: 100%;
+  }
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+  width: 46%;
+
+  .latest-description {
+    font-size: 11px;
+    font-style: italic;
+  }
+}
+
+.woocommerce-checkout .checkout .col-2 h3#ship-to-different-address {
+  height: 37px;
+  label {
+    display: inline-block;
+  }
+}
+
+.woocommerce-checkout #payment ul.payment_methods li .about_paypal {
+  margin-left: 1rem;
+}
+
+.woocommerce .woocommerce-info {
+  border-top-color: $red;
+}
+
+.woocommerce .woocommerce-info:before {
+  color: $red;
+}

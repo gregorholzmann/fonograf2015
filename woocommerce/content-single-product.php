@@ -57,9 +57,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 			do_action( 'woocommerce_single_product_summary' );
 		?>
 		<ul class="record-details">
-			<li>Release Date: <?php the_field('release_date'); ?></li>
-			<li>Run Time: <?php the_field('run_time'); ?></li>
-			<li>Print Run: <?php the_field('print_run'); ?></li>
+			<li><strong>Release Date:</strong> <?php the_field('release_date'); ?></li>
+			<li><strong>Run Time:</strong> <?php the_field('run_time'); ?></li>
+			<li><strong>Print Run:</strong> <?php the_field('print_run'); ?></li>
 		</ul>
 
 
@@ -74,7 +74,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 		do_action( 'woocommerce_after_single_product_summary' );
 	?>
 
-	<?php the_field('track_list'); ?>
+	<div class="track-list">
+		<?php the_field('track_list'); ?>
+	</div>
 
 	</div>
 

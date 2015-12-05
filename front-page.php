@@ -29,10 +29,18 @@ get_header(); ?>
 
 				<?php if( $the_query->have_posts() ): ?>
 					<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
-						<div class="medium-6 small-12 columns">
-							<?php the_title(); ?>
-							<?php the_post_thumbnail(); ?>
-							<?php the_field('short_description'); ?>
+						<div class="latest-album medium-6 small-12 columns">
+							<a href="<?php echo the_permalink(); ?>">
+								<h2 class="latest-title">
+									<?php the_title(); ?>
+								</h2>
+							</a>
+							<a class="latest-image" href="<?php echo the_permalink(); ?>">
+								<?php the_post_thumbnail(); ?>
+							</a>
+								<p class="latest-description">
+									<?php the_field('short_description'); ?>
+								</p>
 						</div>
 					<?php endwhile; ?>
 				<?php endif; ?>
