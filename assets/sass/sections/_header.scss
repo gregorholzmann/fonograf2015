@@ -9,6 +9,7 @@
 		height: 100%;
 		@include breakpoint(sm) {
 			margin-top: 2rem;
+		}
 
 			.social {
 				display: none;
@@ -21,8 +22,6 @@
 					width: 35px;
 				}
 			}
-
-		}
 
 		#site-navigation {
 			.top-bar-section {
