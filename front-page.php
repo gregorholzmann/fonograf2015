@@ -36,7 +36,7 @@ get_header(); ?>
 								</h2>
 							</a>
 							<a class="latest-image" href="<?php echo the_permalink(); ?>">
-								<?php the_post_thumbnail(); ?>
+								<?php the_post_thumbnail('large'); ?>
 							</a>
 								<p class="latest-description">
 									<?php the_field('short_description'); ?>

@@ -21,7 +21,7 @@
 	</div><!-- .inner-wrap -->
 
 	<div class="social-footer">
-		<a href="google.com">
+		<a href="https://www.facebook.com/Fonograf-Editions-933874733333651/">
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				width="67px" height="67px" viewBox="0 0 67 67" enable-background="new 0 0 67 67" xml:space="preserve">
 			<path fill="#878787" d="M29.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095l0.007-2.816c0-1.466,0.141-2.253,2.244-2.253h2.812
@@ -29,7 +29,7 @@
 				C4,17.431,17.432,4,34,4c16.568,0,30,13.431,30,30C64,50.568,50.568,64,34,64z"/>
 			</svg>
 		</a>
-		<a href="google.com">
+		<a href="https://twitter.com/fonograf_ed">
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				width="67px" height="67px" viewBox="0 0 67 67" enable-background="new 0 0 67 67" xml:space="preserve">
 			<path fill="#878787" d="M38.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101l0.063,1.038l-1.048-0.127
